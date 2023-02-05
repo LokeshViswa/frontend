@@ -5,17 +5,27 @@ pipeline {
 
   stages {
 
-    stage('compile') {
+    stage('compile/Build') {
       steps {
         echo 'compile'
       }
     }
-    stage('compile') {
+    stage('Unit Tests') {
       steps {
         echo 'compile'
       }
     }
 
+    stage('Quality Control'){
+      steps {
+        echo 'Quality Control'
+      }
+    }
+    stage('Upload Code to Centralized Place') {
+      steps {
+        echo 'Upload'
+      }
+    }
 
 
   }
